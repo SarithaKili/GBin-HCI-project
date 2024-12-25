@@ -1,0 +1,83 @@
+.footer {
+  background-color: #ffffff; /* White background */
+  color: #2c2c2c; /* Dark text color for contrast */
+  padding: 40px 20px;
+  text-align: center; /* Center align all text */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack all elements vertically */
+  align-items: center; /* Center-align all items */
+  gap: 20px; /* Spacing between sections */
+}
+
+.footer-content-left img {
+  width: 150px; /* Logo size */
+  margin-bottom: 20px;
+}
+
+.footer-content-left p {
+  font-size: 14px; /* Slightly smaller text */
+  line-height: 1.6; /* Better readability */
+  max-width: 600px; /* Limit paragraph width */
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  gap: 15px; /* Spacing between icons */
+  margin-top: 20px;
+}
+
+.footer-social-icons img {
+  width: 30px; /* Icon size */
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Consistent styling */
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover {
+  color: #4CAF50; /* Highlight color on hover */
+}
+
+.footer-content-right ul li {
+  font-size: 14px; /* Smaller text for contact info */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* Subtle divider */
+  margin: 20px 0;
+  width: 80%; /* Reduce width for cleaner design */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #555555; /* Slightly lighter text for copyright */
+}

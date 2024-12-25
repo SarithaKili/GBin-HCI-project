@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  background: url('C:/Users/SARITHA/Desktop/GBin/frontend/vite-project/public/back4.jpg') no-repeat center center; /* Center the image */
+  background-size: cover; /* Cover the entire screen */
+  display: flex; /* Enables flexbox for alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  position: relative; /* Ensure content is positioned relative to the header */
+  color: #ffffff; /* Text color for contrast */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.header-content {
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  text-align: center; /* Center align text and buttons */
+ 
+ 
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center align items vertically */
+  align-items: center; /* Center align horizontally */
+  background: linear-gradient(
+    to bottom, 
+    rgba(19, 40, 135, 0.3), /* Darker gray at the top */
+    rgba(10, 118, 8, 0.6) /* Lighter green at the bottom */
+);
+  border-radius: 10px; /* Rounded corners */
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Large heading text */
+  margin-bottom: 40px;
+  text-shadow: #242524; 
+  font-size: 60PX;
+  
+}
+
+.header button {
+  background: rgb(76, 195, 76);
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  width: 300px; /* Button width */
+  height: 60px; /* Button height */
+  margin: 10px; /* Spacing between buttons */
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 0 5px rgba(17, 16, 16, 0.9); 
+}
+
+.header button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
