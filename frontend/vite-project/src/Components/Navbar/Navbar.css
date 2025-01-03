@@ -1,114 +1,199 @@
+/* Navbar Container */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #fff; 
-  box-shadow: 0 2px 5px rgba(52, 62, 201, 0.2); 
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(52, 62, 201, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
+/* Logo Styling */
 .logo {
   height: 90px;
   cursor: pointer;
 }
+
+/* Search Bar Container */
 .search-container {
-  position: relative; 
-  max-width: 300px; 
-  width: 100%; 
-  margin: 0 auto; 
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .search-bar {
-  width: 100%; 
-  padding: 10px 40px 10px 15px; 
+  width: 100%;
+  padding: 10px 40px 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 20px; 
-  outline: none; 
-  font-size: 16px; 
-  transition: border-color 0.3s, box-shadow 0.3s; 
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .search-bar:focus {
-  border-color: #4CAF50;
-  box-shadow: 0 0 5px rgba(83, 55, 223, 0.5); 
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(83, 55, 223, 0.5);
 }
 
 .search-icon {
   position: absolute;
-  top: 50%; 
-  right: 15px; 
-  transform: translateY(-50%); 
-  width: 30px; 
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 30px;
   height: 30px;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
 
 ul {
-  display: flex;
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
 }
 
+ul li {
+  margin: 0 10px;
+}
+
+/* Button Styling */
 button {
   align-items: center;
   background-color: #fff;
   border: none;
   border-radius: 50%;
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(41, 99, 192, 0.4); 
-  margin: 0 10px;
+  box-shadow: 0 4px 6px rgba(41, 99, 192, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.login {
-  
-  align-items: center;
-  background-color: #4CAF50;
-  color: white; 
-  border: none; 
-  border-radius: 10px; 
-  
-  font-size: 16px; 
-  cursor: pointer; 
-  box-shadow: 0 4px 6px rgba(10, 7, 111, 0.4); 
-  transition: all 0.3s ease; 
-  width: 90px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.login:hover {
-  background-color: #45a049; 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
-  transform: scale(1.05); 
-}
-
-.login:active {
-  background-color: #3e8e41; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  transform: scale(0.95); 
-}
-
-
-button:hover {
-  box-shadow: 0 6px 10px rgba(9, 111, 55, 0.3); 
-  transform: scale(1.1); 
-}
-
 button img {
-  width: 30px; 
+  width: 30px;
   height: 30px;
 }
 
+button:hover {
+  box-shadow: 0 6px 10px rgba(9, 111, 55, 0.3);
+  transform: scale(1.1);
+}
+
 button:active {
-  transform: scale(0.95); 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Button */
+.login {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(10, 7, 111, 0.4);
+  transition: all 0.3s ease;
+  width: 90px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.login:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}
+
+/* Overlay to Dim the Background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 999;
+}
+
+/* Popup Menu Container */
+.menu-popup {
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar's height */
+  right: 20px; /* Aligns the menu to the right of the screen */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  z-index: 1000;
+  width: 250px; /* Fixed width for the dropdown */
+  padding: 10px 0; /* Spacing inside the dropdown */
+  text-align: left; /* Align text to the left */
+}
+
+/* Align Menu Items Vertically */
+.menu-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block; /* Ensure vertical alignment */
+}
+
+.menu-popup ul li {
+  padding: 10px 20px; /* Space around each menu item */
+  border-bottom: 1px solid #ddd; /* Optional: Divider between items */
+}
+
+.menu-popup ul li:last-child {
+  border-bottom: none; /* Remove divider for the last item */
+}
+
+.menu-popup ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.menu-popup ul li a:hover {
+  background-color: #4caf50; /* Green background on hover */
+  color: white; /* White text on hover */
+  border-radius: 5px; /* Add a rounded effect to the hover */
+}
+
+/* Close Button for Popup Menu */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
 }
