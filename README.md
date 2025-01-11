@@ -1,5 +1,5 @@
 # GBin - E-waste Management & E-commerce Organization Website
-![image](https://github.com/user-attachments/assets/0434f551-2521-4be9-9c7c-d46f50291219)
+![image](https://github.com/user-attachments/assets/531805ca-c952-4ec1-8d9f-c6d6c92e6180)
 
 ## Introduction
 The GBin website serves as a platform for responsible e-waste management and e-commerce services. It aims to educate users about safe electronic device disposal while providing easy access to related services.
