@@ -32,38 +32,39 @@ const Navbar = () => {
 
       <ul className="navbar-menu">
         <div className="oder-noti-cart">
-          <button className="Home" onClick={goHome}>
-            <img src={assets.home} alt="Home" />
-          </button>
+          <a className="Home" onClick={goHome}>
+            <img src={assets.home} alt="Home"  />
+           
+          </a>
         </div>
 
-        <button className="menu" onClick={toggleMenu}>
+        <a className="menu" onClick={toggleMenu}>
           <img src={assets.menu} alt="Menu" />
-        </button>
+        </a>
 
-        <div className="oder-noti-noti">
-          <button className="notification">
-            <img src={assets.notification} alt="Notification" />
-          </button>
+        <div className="oder-noti-noti" >
+          <a className="notification" href="/notification">
+            <img src={assets.notification} alt="Notification"   />
+          </a>
           <div className="dot-noti"></div>
         </div>
 
         <div className="oder-noti-cart">
           {/* Updated cart button to navigate to the cart page */}
-          <button className="cart" onClick={goToCart}>
+          <a className="cart" onClick={goToCart} href="/cart">
             <img src={assets.cart} alt="Cart" />
-          </button>
+          </a>
           <div className="dot-cart"></div>
         </div>
 
-        <button className="location">
+        <a className="location">
           <img src={assets.location} alt="Location" />
-        </button>
+        </a>
 
         {/* Sign in button to show the LoginPopup */}
-        <button className="login" onClick={handleSignInClick}>
+        <a className="login" onClick={handleSignInClick}>
           Sign in
-        </button>
+        </a>
       </ul>
 
       {isMenuOpen && (

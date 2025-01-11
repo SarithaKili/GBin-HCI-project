@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import './Cart.css'
 import { StoreContext } from '../../Context/StoreContext'
 import { useNavigate } from 'react-router-dom';
+import Header from '../../Components/Header/Header';
+import Navbar from '../../Components/Navbar/Navbar';
 
 const Cart = () => {
 

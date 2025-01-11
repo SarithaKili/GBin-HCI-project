@@ -8,6 +8,9 @@ import Services from './Pages/Services/Services';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Career from './Pages/Career/Career';
 import LifeatGbin from './Pages/LifeatGbin/LifeatGbin';
+import Notification from './Pages/Notification/Notification';
+import Buy from './Pages/Buy/Buy';
+import Sell from './Pages/Sell/Sell';
 
 const App = () => {
   return (
@@ -22,6 +25,11 @@ const App = () => {
         <Route path="/option4" element={<ContactUs/>} />
         <Route path="/option5" element={<Career/>} />
         <Route path="/option6" element={<LifeatGbin/>} />
+        <Route path="/notification" element={<Notification/>} />
+        <Route path="/notification" element={<Notification/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/buy" element={<Buy/>} />
+        <Route path="/sell" element={<Sell/>} />
         
       </Routes>
     </div>

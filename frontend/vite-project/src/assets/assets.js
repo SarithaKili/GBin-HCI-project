@@ -15,6 +15,7 @@ import back2 from './back2.jpg'
 import back3 from './back3.jpg'
 import rating_stars from './rating_starts.png'
 import home from './home.png'
+import bac1 from './bac1.jpg'
 
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.jpg'
@@ -58,7 +59,8 @@ export const assets = {
     back2,
     back3,
     rating_stars,
-    home
+    home,
+    bac1
    
 }
 
