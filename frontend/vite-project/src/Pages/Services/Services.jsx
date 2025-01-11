@@ -1,9 +1,8 @@
 import React from 'react'
-import Footer from '../../Components/footer/Footer'
-import ProductDisplay from '../../Components/ProductDisplay/ProductDisplay'
 import ProductMenu from '../../Components/ProductMenu/ProductMenu'
+import Footer from '../../Components/footer/Footer'
 
-const Recycling = () => {
+const Services = () => {
   return (
     <div>
 
@@ -95,8 +94,7 @@ const Recycling = () => {
     
     <Footer />
     </div>
-    
   )
 }
 
-export default Recycling
+export default Services

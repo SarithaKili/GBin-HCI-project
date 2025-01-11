@@ -1,15 +1,20 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/footer/Footer'
+
 
 
 const LifeatGbin = () => {
   return (
     <div>
-    <Navbar/>
-    <Footer/>
+
+      <div className='header'>
+      <div className="header-content">
+
+      </div>
     </div>
-      
+      <Footer/>
+    </div>
+    
     
   )
 }
