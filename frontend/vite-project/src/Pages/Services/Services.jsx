@@ -20,6 +20,7 @@ const Services = () => {
 <div>
   <div>
        <h2>Collection</h2>
+     
        <p>At GBin, we are dedicated to responsible e-waste management, At GBin, we are dedicated to responsible e-waste management, 
         ensuring that electronic devices are disposed of safely and At GBin, we are dedicated to responsible e-waste management,
          ensuring that electronic devices are disposed of safely and sustainably. Our mission goes beyond recycling; we aim to educate and 

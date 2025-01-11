@@ -7,7 +7,7 @@ const ProductMenu = ( {category,setCategory}) => {
 
   return (
     <div>
-       <h1>explore</h1>
+       <h1>Find what we can Recycle </h1>
 
        <div className="explore-menu-list">
         {menu_list.map((item,index)=>{

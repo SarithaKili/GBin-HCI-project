@@ -1,6 +1,5 @@
 .header {
-  width: 100%;
-  height: 100vh; /* Full-screen height */
+ 
   background: url('C:\Users\SARITHA\Desktop\Projects\GBIN\GBin-HCI-project\frontend\vite-project\public\bac1.jpg') no-repeat center center; /* Center the image */
   background-size: cover; /* Cover the entire screen */
   display: flex; /* Enables flexbox for alignment */
@@ -8,38 +7,65 @@
   justify-content: center; /* Horizontally center content */
   position: relative; /* Ensure content is positioned relative to the header */
   color: #ffffff; /* Text color for contrast */
-  border-radius: 10px; /* Rounded corners */
+  
   
 }
 
 .header-content {
   width: 100%;
-  height: 100vh; /* Full-screen height */
-  text-align: center; /* Center align text and buttons */
- 
- 
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center align items vertically */
-  align-items: center; /* Center align horizontally */
+  height: 100vh; 
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
   background: linear-gradient(
     to bottom, 
-    rgba(19, 40, 135, 0.3), /* Darker gray at the top */
-    rgba(10, 118, 8, 0.6) /* Lighter green at the bottom */
+    rgba(6, 6, 6, 0.036), /* Darker gray at the top */
+    rgba(12, 173, 9, 0.5) /* Lighter green at the bottom */
 );
-  border-radius: 10px; /* Rounded corners */
-}
-
-.header h1 {
-  font-size: 2.5rem; /* Large heading text */
-  margin-bottom: 40px;
-  text-shadow: #242524; 
-  font-size: 60PX;
   
 }
 
+.header h1 {
+  font-size: 80px;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+  color: #ffffff;
+  font-family: monospace;
+  border: 2px solid #ffffff; /* Border for the line box */
+  padding: 10px 10px; /* Padding inside the box (vertical, horizontal) */
+  display: inline-block; /* Make the border fit the content */
+  text-align: center; /* Center text within the box */
+  background: linear-gradient(to top, rgba(77, 246, 102, 0.367), rgba(6, 99, 6, 0.559)); /* Optional background for contrast */
+  background-position:center;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+/* Add this to your existing Header.css */
+
+.header h1 {
+  display: inline-block; /* Allow width animation */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 2px solid #ffffff; /* Cursor effect */
+  animation: typing 8s steps(30, end) ;
+}
+
+@keyframes typing {
+  from {
+    width: 0px; /* Start from 0 width */
+  }
+  to {
+    width: 100%; /* End at full width */
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* Blink effect */
+  }
+}
 .header button {
-  background: rgb(76, 195, 76);
+  background: linear-gradient(to top, rgb(86, 243, 104), rgb(7, 253, 7));
   color: #ffffff; /* White text */
   border: none;
   border-radius: 5px;
@@ -50,9 +76,16 @@
   cursor: pointer;
   transition: all 0.3s ease; /* Smooth hover effect */
   box-shadow: 0 0 5px rgba(17, 16, 16, 0.9); 
+ 
 }
 
 .header button:hover {
   background-color: #45a049; /* Slightly darker green on hover */
   transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.header button a{
+  color: #ffffff;
+  font-size: 50px;
+  direction: none;
 }
