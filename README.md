@@ -3,6 +3,7 @@
 
 ## Introduction
 ## Tech Stack
+-** Design : Mock interface then Figma
 -** React : A JavaScript library for building user interfaces, allowing for reusable components and a dynamic user experience.
 -** CSS   : For styling the application, enhancing the visual appearance and layout.
 
