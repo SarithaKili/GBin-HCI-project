@@ -29,8 +29,15 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <img className="logo" src={assets.logo} alt="Logo" onClick={goHome} /> {/* Click logo to navigate to home */}
-
-      <ul className="navbar-menu">
+      <div className='search-container'>
+        <input 
+          type="text" 
+          className='search-bar' 
+          placeholder="Search..." 
+        />
+      </div >
+      <div className="nav-menu">
+       <ul className="navbar-menu">
         <div className="oder-noti-cart">
           <a className="Home" onClick={goHome}>
             <img src={assets.home} alt="Home"  />
@@ -66,7 +73,7 @@ const Navbar = () => {
           Sign in
         </a>
       </ul>
-
+      </div>
       {isMenuOpen && (
         <>
           {/* Dimmed overlay */}

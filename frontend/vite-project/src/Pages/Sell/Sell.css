@@ -1,0 +1,124 @@
+.ewaste-sell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.sell-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-upload-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:hover {
+  border-color: #0056b3;
+}
+
+.main-image-preview {
+  margin: 20px 0;
+}
+
+.main-image-preview img {
+  max-width: 300px; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.small-image-preview {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.small-image {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.price-display {
+  font-size: 1.4em;
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.collection-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.collection-details h3 {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.collection-details p {
+  margin: 5px 0;
+  color: #666;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../../Components/footer/Footer'
-import ProductDisplay from '../../Components/ProductDisplay/ProductDisplay'
+
 import ProductMenu from '../../Components/ProductMenu/ProductMenu'
 
 const Recycling = () => {
